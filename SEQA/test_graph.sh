@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+python train_graph.py \
+    -split_qm True \
+    -copy_decoder True \
+    -copy_word True \
+    -encode_q True \
+    -mode dev \
+    -test_from model_path/answer_generation.pt \
+    -graph_transformer True \
+    -use_cls True \
+    -avg_sent True \
+    -copy_sent True \
+    -gpu 3 \
+    -valid_step 500 \
+    -do_eval True \
+    -train_steps 20000 \
+    -save_checkpoint_steps 10000 \
+    -temp_dir temp_dir \
+    -train_batch_size 1500 \
+    -test_batch_size 1500 \
+    -sep_optim true \
+    -lr_bert 0.0002 \
+    -lr_dec 0.002 \
+    -warmup_steps_bert 1000 \
+    -warmup_steps_dec 1000 \
+    -data_path data/  \
+    -model_path model_path/ \
+    -result_path result_path/ \
+    -log_file log_path/log_copysent_graph \
+    -rnn_hidden_size 256 \
+    -rnn_num_layers 2 \
+    -rel_dim 100 \
+    -ff_embed_dim 1024 \
+    -num_heads 8\
+    -snt_layers 1\
+    -graph_layers 4\
+    -inference_layers 3\
