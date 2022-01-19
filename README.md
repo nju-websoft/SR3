@@ -17,6 +17,7 @@ SR3: Sentence Ranking, Reasoning, and Replication for Scenario-Based Essay Quest
 
 ## Quickstart
 
+dataset could be download from [link](https://github.com/nju-websoft/GeoSEQA)
 ### step1: sentence retrieve
 
 ```bash
