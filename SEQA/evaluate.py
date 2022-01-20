@@ -266,32 +266,3 @@ def cal_metrics(gt, pred, metrics_map,maxnum=-1):
   if ('HIT' in metrics_map):
     out[metrics_map.index('HIT')] = hit(gt, pred,maxnum=maxnum)
   return out
-
-if __name__ == '__main__':
-    # METRICS_MAP = ['MAP',  'NDCG', 'HIT']
-    # gt_doc_ids = {0, 1, 2}
-    # pred_doc_ids = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    #
-    # result = cal_metrics(
-    #     gt=gt_doc_ids, pred=pred_doc_ids, metrics_map=METRICS_MAP)
-    # print(result)
-    # gt_doc_ids = {0, 1, 2}
-    # pred_doc_ids = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-    # result = cal_metrics(
-    #     gt=gt_doc_ids, pred=pred_doc_ids, metrics_map=METRICS_MAP,maxnum=5)
-    # print(result)
-    # getScore('resource/xunfei/PreSumm.result','resource/xunfei/PreSumm.gold')
-    # getScore("resource/geo_q_yzhao/bm25/answer.txt", "resource/geo_q_yzhao/bm25/test.tgt")
-    # getScore("resource/geo_all/logs/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/geo_q/logs/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/geo_q_m/logs/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/geo_q_m/logs_new/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/geo_q_m/logs_baseline/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/roberta_q_m/logs/PreSumm.result", "resource/raw/test.tgt")
-    # getScore("resource/raw/material", "resource/raw/test.tgt")
-    # getScore("resource/geo_q_m_image/q_logs/PreSumm.result", "resource/geo_q_m_image/q_logs/gold.result")
-    # getScore("resource/geo_q_m_image/q_i_copy/PreSumm.result", "resource/geo_q_m_image/q_logs/gold.result")
-
-    # getScore("resource/geo_q_m_image/q_i_logs/PreSumm.result", "resource/geo_q_m_image/q_logs/gold.result")
-    # getScore('graph_data/results/.4000.candidate','graph_data/results/.4000.gold')
-    getScore('wikihow_data/results_splitgen/.1.candidate','wikihow_data/results_splitgen/.1.gold',language='en')

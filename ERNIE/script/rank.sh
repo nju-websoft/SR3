@@ -45,10 +45,10 @@ python -u ../run_classifier.py \
                    --train_set ${TASK_DATA_PATH}/train.tsv \
            		   --dev_set ${TASK_DATA_PATH}/val.tsv \
 				   --test_set ${TASK_DATA_PATH}/test.tsv \
-				   --test_save ${TASK_DATA_PATH}/test_result.0.0 \
+				   --test_save ${TASK_DATA_PATH}/test_result \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
-                   --init_checkpoint ./checkpoints/step_14175 \
-                   --checkpoints ./checkpoints \
+                   --init_checkpoint ./temp/step_14175 \
+                   --checkpoints ./temp \
 				   --learning_rate 2e-5 \
                    --save_steps 1000 \
                    --weight_decay  0.0 \
@@ -74,7 +74,7 @@ python -u ../run_classifier.py \
                    --train_set ${TASK_DATA_PATH}/train.tsv \
            		   --dev_set ${TASK_DATA_PATH}/val.tsv \
 				   --test_set ${TASK_DATA_PATH}/val.tsv \
-				   --test_save ${TASK_DATA_PATH}/val_result.0.0 \
+				   --test_save ${TASK_DATA_PATH}/val_result \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --init_checkpoint ./checkpoints/step_14175 \
                    --checkpoints ./checkpoints \
@@ -91,7 +91,7 @@ python -u ../run_classifier.py \
                    --num_iteration_per_drop_scope 1 \
                    --num_labels 2 \
                    --random_seed 1
-
+#
 python -u ../run_classifier.py \
                    --use_cuda True \
                    --verbose true \
@@ -103,7 +103,7 @@ python -u ../run_classifier.py \
                    --train_set ${TASK_DATA_PATH}/train.tsv \
            		   --dev_set ${TASK_DATA_PATH}/val.tsv \
 				   --test_set ${TASK_DATA_PATH}/train.tsv \
-				   --test_save ${TASK_DATA_PATH}/train_result.0.0 \
+				   --test_save ${TASK_DATA_PATH}/train_result \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --init_checkpoint ./checkpoints/step_14175 \
                    --checkpoints ./checkpoints \
