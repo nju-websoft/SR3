@@ -17,7 +17,7 @@ SR3: Sentence Ranking, Reasoning, and Replication for Scenario-Based Essay Quest
 
 ## Quickstart
 
-Dataset could be download from [link](https://github.com/nju-websoft/GeoSEQA)
+Dataset could be download from [link](https://github.com/nju-websoft/GeoSEQA).
 External knowledge needs to be imported into the database
 
 ### step1: sentence retrieve
