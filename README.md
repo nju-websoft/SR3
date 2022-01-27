@@ -18,7 +18,14 @@ SR3: Sentence Ranking, Reasoning, and Replication for Scenario-Based Essay Quest
 ## Quickstart
 
 Dataset could be download from [link](https://github.com/nju-websoft/GeoSEQA).
-External knowledge needs to be imported into the database
+
+### external knowledge
+
+geoname_merge_zhjian.csv: We  import  the  GeoNames  knowledge base which describes 465 thousand locations with 4.65  million  triple-structured  geographical  facts. Besides,  we  link  each  location  with  its  K ̈oppen-Geiger  climate  type,  which  is  then  mapped  to  aclimate  type  defined  in  China’s  high-school  geography textbook. The file could be download from [link](https://drive.google.com/file/d/107qItFVDlTUPJXkJArpoKfPCpV3bFecX/view?usp=sharing)
+
+title.csv and summary.csv in BaiduBaike.zip: title and summary of Baidu Baike. These files could be download from [link](https://drive.google.com/file/d/18Xzn0of7S-EoeqBVX8iIEyKfa40hoKYu/view?usp=sharing).
+
+External knowledge needs to be imported into the database.
 
 ### step1: sentence retrieve
 
@@ -40,7 +47,7 @@ environment and pretrained model of ERNIE could be installed and download from [
 
 sentence ranking model after training could be download from [link](https://drive.google.com/file/d/1noA5I7jlqglSrfjb1GsWy7qcHtGF6QXc/view?usp=sharing).
 
-### step3: answer generation
+### step3: sequence-to-sequence
 
 ```bash
 cd SEQA

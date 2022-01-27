@@ -192,6 +192,23 @@ def recognize_entity(texts,ltp):
             new_texts.append(new_text)
     return entitys,new_texts
 
+def findEntityWithJingwei(jingwei,geonames):
+    results={}
+    for name in jingwei:
+        latitude,longitude = jingwei[name]["latitude"],jingwei[name]["longitude"]
+        min_dis=1000000
+        min_item=None
+        for key,items in geonames.items():
+            for item in items:
+                if item[2]!=None and item[3]!=None:
+                    la = float(item[2])
+                    long = float(item[3])
+                    dis=abs(la-latitude)+abs(long-longitude)
+                    if dis<min_dis:
+                        min_dis=dis
+                        min_item=item
+        results[name]=min_item
+    return results
 
 def addRetrieveData(readfile,writefile):
     from ltp import LTP
@@ -208,7 +225,7 @@ def addRetrieveData(readfile,writefile):
             if image_text==[[]]:
                 image_text=[]
             image = data['image']
-            object2Geonames = data['object2Geonames']
+            object2Geonames = findEntityWithJingwei(data['object2Geonames'],geonames)
             src = [[sent for sent in splitSentence(data['src']) if len(sent)>1]]
             entitys = []
             entity, src = recognize_entity(src, ltp)
@@ -908,10 +925,11 @@ def calmetricERNIE(truefile,pred_file,writefile):
                 for metric, score in zip(['MAP', 'NDCG', 'HIT'], scoreAvg):
                     print(metric,':',score)
 
-if __name__ == '__main__':
-    # addRetrieveData('../data/train_raw.json', '../data/train_retrieve.json')
-    # addRetrieveData('../data/val_raw.json', '../data/val_retrieve.json')
-    # addRetrieveData('../data/test_raw.json', '../data/test_retrieve.json')
+# if __name__ == '__main__':
+    # addRetrieveData('../data/train_raw.json', '../data/train_retrieve_temp.json')
+    # addRetrieveData('../data/val_raw.json', '../data/val_retrieve_temp.json')
+    # addRetrieveData('../data/test_raw.json', '../data/test_retrieve_temp.json')
+
     # tagGoldInfo('../data/test_retrieve.json','../data/test.json')
     # tagGoldInfo('../data/val_retrieve.json','../data/val.json')
     # tagGoldInfo('../data/train_retrieve.json','../data/train.json')
@@ -940,6 +958,6 @@ if __name__ == '__main__':
     # generateGraphfile('../data/train_score.json',
     #                   '../data/train_graph.json')
 
-    calmetricERNIE('../data/test.tsv',
-                   '../data/test_result.0.0',
-                   '../data/test.txt')
+    # calmetricERNIE('../data/test.tsv',
+    #                '../data/test_result.0.0',
+    #                '../data/test.txt')

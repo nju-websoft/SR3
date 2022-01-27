@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f0fc21a-4d2d-48b3-9191-5a72fe6ed8a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_process/dbutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/getData.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/getData.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_process/getData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="196" column="23" lean-forward="true" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
+            <state relative-caret-position="86">
+              <caret line="928" column="28" selection-start-line="928" selection-start-column="28" selection-end-line="928" selection-end-column="28" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -36,21 +36,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_process/dbutil.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;252f64bb-b88b-458f-bd37-51f5009a3c3e&gt;/home/home1/ychen/geography/SR3/data_process/dbutil.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_process/dbutil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="546">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -112,9 +111,10 @@
         <option value="$PROJECT_DIR$/SEQA/run_graph.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/SEQA/evaluate.py" />
-        <option value="$PROJECT_DIR$/data_process/getData.py" />
         <option value="$PROJECT_DIR$/ERNIE/script/rank.sh" />
         <option value="$PROJECT_DIR$/data_process/dbutil.py" />
+        <option value="&lt;252f64bb-b88b-458f-bd37-51f5009a3c3e&gt;/home/home1/ychen/geography/SR3/data_process/getData.py" />
+        <option value="$PROJECT_DIR$/data_process/getData.py" />
       </list>
     </option>
   </component>
@@ -297,7 +297,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18266475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18266475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -309,15 +309,15 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32884097" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49928367" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2762803" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35983828" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007163" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.3295129" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.21203439" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -358,7 +358,6 @@
     <entry file="file://$PROJECT_DIR$/SEQA/test_graph.sh" />
     <entry file="file://$PROJECT_DIR$/ERNIE/run_classifier.py" />
     <entry file="file://$PROJECT_DIR$/SEQA/model_graph/data.py" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/data_process/evaluate.py" />
     <entry file="file://$PROJECT_DIR$/SEQA/evaluate.py" />
     <entry file="file://$PROJECT_DIR$/data/test.txt" />
@@ -373,23 +372,31 @@
         <state relative-caret-position="-190" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/dbutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_process/getData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="196" column="23" lean-forward="true" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
+        <state relative-caret-position="86">
+          <caret line="928" column="28" selection-start-line="928" selection-start-column="28" selection-end-line="928" selection-end-column="28" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/dbutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
